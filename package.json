@@ -1,0 +1,28 @@
+{
+  "name": "student-expense-backend",
+  "version": "2.0.0",
+  "description": "Student Expense List System API using Express and MongoDB, with sample data seeding and CRUD routes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node seed.js",
+    "seed:accounts": "node scripts/importAccounts.js",
+    "create:admin": "node scripts/createAdmin.js",
+    "accounts:emails": "node scripts/updateAccountEmails.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.52.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "nodemailer": "^6.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.10"
+  }
+}
